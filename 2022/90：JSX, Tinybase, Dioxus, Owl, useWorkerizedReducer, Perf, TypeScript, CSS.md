@@ -2,9 +2,11 @@
 
 ## React
 
-### [关于 JSX 条件的好建议](https://thoughtspile.github.io/2022/01/17/jsx-conditionals/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) 
+### [JSX 条件写法的建议](https://thoughtspile.github.io/2022/01/17/jsx-conditionals/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) 
 
 我们喜欢 React，因为它只是 JavaScript，我们不需要学习另一种模板语言。但是让我们管理它并不总是那么容易，并且有一些陷阱需要避免😅这篇文章给出了一个很好的概述。
+
+> 笔者备注：通过简单的图文，让人们很容易理解正确的写法和需要注意的坑。
 
 ### [使用WorkerizedReducer](https://github.com/surma/use-workerized-reducer?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 
@@ -16,7 +18,6 @@ Surma (Google) 引入了一个库来使用 Service Worker 来创建 React reduce
 
 ### [小基地](https://github.com/tinyplex/tinybase?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 用于结构化数据的新反应式存储（在表中，如 SQL 或 Normalizr），带有 React 集成包，包括`useCell`用于高效、细粒度订阅的钩子。体积小，但很有特色：索引、关系、撤消/重做……
-
 
 -   [我们如何以零错误将 541 个组件从 Styled Components 迁移到 Emotion](https://storybook.js.org/blog/541-components-from-styled-components-to-emotion/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：将 Storybook 代码库从一个 CSS-in-JS 库迁移到另一个库的反馈，将他们自己的视觉回归工具（Chromatic）作为安全网进行测试
 -   [阅读源代码 - Redux](https://alexkondov.com/reading-source-code-redux/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：Alex 研究了 Redux 代码库并利用这个机会讨论了 TypeScript 重载的合法用法createStore
@@ -61,6 +62,7 @@ Stream 是企业级**API**和**SDK**的制造商，可帮助产品和工程团�
 
 
 ## 伙伴
+
 -   [**开始 React Native**](https://start-react-native.dev/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：与 William Candillon 一起学习有关手势和动画的一切
 -   [**React-Native Weekly**](https://andrei-calazans.com/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：保持最新的 React-Native 核心更新
 -   [**TypeScript Weekly**](https://www.typescript-weekly.com/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：每周最好的 TypeScript 链接，就在您的收件箱中。
