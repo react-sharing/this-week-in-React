@@ -2,17 +2,17 @@
 
 ## React
 
-### [JSX条件写法的好建议](https://thoughtspile.github.io/2022/01/17/jsx-conditionals/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) 
+### [Good advice on JSX conditionals（JSX条件写法的好建议）](https://thoughtspile.github.io/2022/01/17/jsx-conditionals/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) 
 
 我们喜欢 React，因为它还是 JavaScript，我们不需要学习另一种模板语言。但是让我们管理它并不总是那么容易，并且有一些陷阱需要避免😅这篇文章给出了一个很好的描述。
 
 > 笔者备注：通过简单的图文，让人们很容易理解正确的写法和需要注意的坑。
 
-### [使用WorkerizedReducer](https://github.com/surma/use-workerized-reducer?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+### [useWorkerizedReducer](https://github.com/surma/use-workerized-reducer?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 
 Surma (Google) 介绍了一个库使用 Service Worker 来创建 React reducer（可能是异步的）的库。由于使用 Immer JS 和使用 post Message 传输补丁，通信效率很高。 浏览器兼容性很好，只有 Firefox 需要 polyfill。现在让我们为这个🤷‍♂️找到一个好的用例，有人自荐么？
 
-### [不一致的事实：Next.js 和类型安全](https://t3.gg/blog/posts/types-and-nextjs?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+### [An Inconsistent Truth: Next.js and Type Safety（不一致的事实：Next.js 和类型安全）](https://t3.gg/blog/posts/types-and-nextjs?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 
 关于Next.js中当前end-2-end类型限制的有趣想法，重点放在`getServerSideProps`和page props。要么有太多的手动样板文件（出错的风险），要么是类型帮助器`InferGetServerSidePropsType`可能会产生出人意料的不安全结果。唤起所有框架期待已久的 TypeScript 功能：[类型模块导出的能力](https://github.com/microsoft/TypeScript/issues/38511?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)。绍其他解决方案，如 Blitz、服务器组件或[tRPC](https://trpc.io/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)。最后一个看起来非常有趣（另请参阅使用它的[zart](https://github.com/KATT/zart?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)样板）。
 
@@ -83,7 +83,7 @@ Stream 是企业级**API**和**SDK**的制造商，可帮助产品和工程团�
 
 我看了一点跨平台支持，但我不确定它是如何工作的。它说原生性能，但似乎在桌面和移动设备上使用[Tauri](https://tauri.studio/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)，afaik 使用 WebViews？🤔
 
-**附加功能：**
+**拓展阅读：**
 
 -   [TypeScript 备忘单](https://www.typescriptlang.org/cheatsheets?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：4 个官方备忘单：类型、接口、类和控制流分析
 -   🎥 [CSS Cascade 层](https://twitter.com/Una/status/1482096170843480068?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：更好地控制 CSS 规则的特异性。这可能会产生有趣的影响：[不必再关心 CSS 插入顺序](https://twitter.com/sebastienlorber/status/1483155894288494593?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)。另请参阅[级联层解释器](https://css.oddbird.net/layers/explainer/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)。
