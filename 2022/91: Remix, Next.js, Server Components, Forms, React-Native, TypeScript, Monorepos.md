@@ -5,19 +5,19 @@
 
 ### [Remix vs Next.js](https://remix.run/blog/remix-vs-next?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 
-We finally have an official comparison with Next.js!
+我们终于有了与Next.js的正式比较！
 
-First, you should know that the Remix team really appreciates the Vercel platform, despite the competition between Next.js and Remix. But they say Remix is better obviously 😏 and there are good arguments and waterfalls to prove it.
+首先，你应该知道，Remix团队非常欣赏Vercel平台，尽管Next.js和Remix之间存在竞争。但他们说Remix显然更好😏而且有很好的论据和watefalls来证明这一点。
 
-This comparison is based on a real-world e-commerce app with a Shopify API integration, on which they essentially analyze 2 pages: a landing page with fairly static content, and a very dynamic search page. All this deployed on Vercel and Fly.
+这个比较是基于一个真实世界的电子商务应用，与Shopify的API集成，他们基本上分析了2个页面：一个具有相当静态内容的登陆页面和一个非常动态的搜索页面。所有这些都部署在Vercel和Fly上。
 
-A good highlight of the advantages of server rendering: sometimes it’s better to render everything on the server side rather than doing a mix of the 2 (as Next.js seems to recommend): static shell, and search results fetched on the client side.
+服务器渲染的优势的一个很好的亮点：有时在服务器端渲染所有内容，而不是将两者混合在一起（正如Next.js似乎推荐的那样）：静态外壳，以及在客户端获取的搜索结果。
 
-Next.js is more complex, with life-cycle functions that run everywhere (server, browser, etc.). Remix prefers to keep it simpler, just do dynamic rendering, but do it well. By relying on the browser’s native functions, this also reduces the amount of JavaScript to be sent on the client side.
+Next.js更复杂，它的生命周期函数到处运行（服务器、浏览器等）。Remix更倾向于保持简单，只做动态渲染，但要做得好。通过依赖浏览器的本地函数，这也减少了客户端需要发送的JavaScript数量。
 
-Very long article, not easy to summarize, read it to make up your own mind. I haven’t fully understood Remix yet, and I still have some questions about error handling if the Shopify API goes down, security, architecture complexity with Redis cache, app redeployment with invalidation of the caches… In short, a lot of things that we like about the Jamstack and that we don’t necessarily want to lose.
+文章很长，不容易总结，读完后可以自己做决定。我还没有完全理解Remix，对于Shopify API宕机时的错误处理、安全性、Redis缓存的架构复杂性、缓存失效时应用的重新部署......总之，Jamstack有很多我们喜欢的，而且也不想失去的东西
 
-Overall it really makes me want to try Remix on a non-critical project: luckily I need to build a website for this newsletter 😏
+总的来说，这真的让我想在一个非关键项目上尝试Remix：幸运的是，我需要为这份通讯建立一个网站。
 
 ### [How React server components work: an in-depth guide](https://blog.plasmic.app/posts/how-react-server-components-work/?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
 
