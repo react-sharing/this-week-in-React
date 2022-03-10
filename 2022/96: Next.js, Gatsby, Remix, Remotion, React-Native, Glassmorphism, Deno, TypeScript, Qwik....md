@@ -1,45 +1,24 @@
-This Week In React #96: Next.js, Gatsby, Remix, Remotion, React-Native, Glassmorphism, Deno, TypeScript, Qwik...
-===
-
-Hi everyone!
-
-It has been a tough week. Not easy to focus on React content when terrible war videos are everywhere on Twitter. To provide direct financial support to Ukraine: go to an **official website** such as [Ukraine.ua](https://war.ukraine.ua/?utm_campaign=React%20Hebdo&utm_medium=email&utm_source=Revue%20newsletter), or be vigilant (many scams...). I choose [UNHCR](https://donner.unhcr.org/urgence-ukraine/~mon-don?utm_campaign=React%20Hebdo&utm_medium=email&utm_source=Revue%20newsletter) because French gov matches x4 the donation.
-
-This week remains interesting in terms of content.
-
-I created a Twitter community [This Week In React](https://twitter.com/i/communities/1498347452826537990?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) to test the new Twitter feature, I don't know yet what will come out of it. Do not hesitate to join and we'll figure out.
-
-🙏 **Support the newsletter:**
-
--   😘 **Recommend it to your friends**: it really helps!
--   💸 [**Sponsorise This Week In React**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   😍 [**Write testimonials on Twitter**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   🧵 [**Retweet the latest Twitter thread**](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   📨 Reply to this [**email**](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter): feedback is welcome
-
-[![](https://user-images.githubusercontent.com/749374/153181021-8fdb0ece-270a-4cf2-980b-4557d04316ad.png)](https://thisweekinreact.com)
-
 ## React
 
 [**Comparing Gatsby and Next.js for website development**](https://dev.to/alex_barashkov/comparing-gatsby-and-nextjs-for-website-development-13b7?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Alex explains why his agency prefers Gatsby over Next.js for website development. It's pretty well argued. Gatsby is not very fashionable at the moment but I think it's still a good solution to ship a website quickly and easily integrate with a CMS out-of-the-box.
+Alex解释了为什么他的机构在网站开发方面更喜欢Gatsby而不是Next.js。这是很好的论证。Gatsby目前不是很时髦，但我认为它仍然是一个很好的解决方案，可以快速搭建网站，并容易与CMS继承。
 
 [**Optimizing third-party script loading in Next.js**](https://web.dev/script-component/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Presentation of the work of the Aurora team at Google who worked on the `<Script>` component of Next.js, optimizing the loading of third-party scripts. There may be an upcoming integration with [Partytown](https://partytown.builder.io/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), to run these scripts in a worker.
+介绍谷歌Aurora团队的工作，他们致力于Next.js的`<Script>`组件，优化了第三方脚本的加载。可能会有一个即将到来的与[Partytown](https://partytown.builder.io/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)的整合，在worker中运行这些脚本。
 
 [**Moving from Next to Remix**](https://www.adamcollier.co.uk/blog/moving-from-next-to-remix?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Adam shares his motivations for migrating his site from Next.js to Remix, as well as many other details (Prisma, Planetscale, UnoCSS...). Next.js remains a good choice. He really likes how Remix handle forms.
+Adam分享了他将网站从Next.js迁移到Remix的动机，以及许多其他细节（Prisma、Planetscale、UnoCSS...）。Next.js仍然是一个不错的选择。他非常喜欢Remix处理表单的方式。
 
 [**Interaction Testing with Storybook**](https://storybook.js.org/blog/interaction-testing-with-storybook/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Storybook now offers an interaction testing system (beta) co-located with stories to test components with Jest, Playwright and Testing Library. That looks quite convenient.
+Storybook现在提供了一个交互测试系统（测试版），和story共存，用Jest、Playwright和测试库测试组件。这看起来相当方便。
 
 **Extras:**
 
--   🐦 [React-18 RC1](https://twitter.com/acdlite/status/1497662815519260678?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): should be released soon
+-   🐦 [React-18 RC1](https://twitter.com/acdlite/status/1497662815519260678?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 应该很快发布
 -   🐦 [Rachel Nabors leaves the React team at Meta](https://twitter.com/rachelnabors/status/1497179514773942272?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) after greatly contributing to the [new beta React docs site](https://beta.reactjs.org/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) and React-Native docs.
 -   💬 Mark Erikson suggests to create a [React Docs Working Group](https://github.com/reactjs/reactjs.org/issues/3308?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#issuecomment-1051055907).
 -   📜 [A Fundamental Guide To React Suspense](https://www.chakshunyu.com/blog/a-fundamental-guide-to-react-suspense/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
@@ -48,8 +27,8 @@ Storybook now offers an interaction testing system (beta) co-located with storie
 -   📜 [Doordash: Building a Marketing Engineering Platform using Next.js, Cloudflare, and Contentful](https://doordash.engineering/2022/02/22/building-a-marketing-engineering-platform-using-next-js-cloudflare-and-contentful/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   👥 [GatsbyConf 2022](https://gatsbyconf.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 2-3 March
 -   🎥 [Figma + Remotion](https://twitter.com/JNYBGR/status/1496748768821133312?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
--   📦 [Redux Toolkit 1.8](https://github.com/reduxjs/redux-toolkit/releases/tag/v1.8.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): listener side-effect middleware inspired by Redux-Saga: dispatch actions in reaction to other actions
--   📦 [Gatsby 4.8](https://www.gatsbyjs.com/docs/reference/release-notes/v4.8/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Gatsby 4.9](https://www.gatsbyjs.com/docs/reference/release-notes/v4.9/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): improves TypeScript support, reduces memory footprint
+-   📦 [Redux Toolkit 1.8](https://github.com/reduxjs/redux-toolkit/releases/tag/v1.8.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 受Redux-Saga启发的监听器副作用中间件：分派操作以响应其他操作
+-   📦 [Gatsby 4.8](https://www.gatsbyjs.com/docs/reference/release-notes/v4.8/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Gatsby 4.9](https://www.gatsbyjs.com/docs/reference/release-notes/v4.9/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 提高了对TypeScript的支持，减少内存占用
 -   📦 [Docusaurus 2.0 beta.16](https://twitter.com/docusaurus/status/1497227180295823366?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): swizzle CLI, breadcrumbs...
 -   📦 [GraphCMS Docs Starter](https://graphcms.com/blog/announcing-graphcms-docs-starter?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Remix + Tailwind
 -   📦 [Headless UI 1.5](https://tailwindcss.com/blog/headless-ui-v1-5?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): with Combobox
@@ -60,12 +39,12 @@ Storybook now offers an interaction testing system (beta) co-located with storie
 
 [**React Native New Architecture Working Group**](https://github.com/reactwg/react-native-new-architecture?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-GitHub discussions repo to support the rollout of the new React-Native architecture. Read-only but possible to request an invitation. Quite similar to the React-18 Working Group. Already a few interesting subjects under discussion.
+关于支持新的React-Native架构的推广的GitHub讨论库。只读，但可以申请邀请。与React-18工作组颇为相似。已经有一些有趣的主题在讨论中。
 
 **Extras:**
 
 -   🐦 [React-Native 0.68](https://twitter.com/reactnative/status/1497273574784073729?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): pre-release announced as available (now in [RC2](https://github.com/facebook/react-native/releases/tag/v0.68.0-rc.2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter))
--   🎥 [Glassmorphism in React Native](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=ao2i_sOD-z0): last Skia video from William Candillon, nice demos of what is now possible in React-Native using blur/backdrop filters
+-   🎥 [Glassmorphism in React Native](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=ao2i_sOD-z0): 来自William Candillon的最后一个Skia视频，很好地展示了React-Native中使用模糊/背景滤镜的可能性。
 -   🎙️ [RNR 227 - Better React Native Tooling with Tommy Nguyen and Adam Foxman](https://reactnativeradio.com/episodes/rnr-227-better-react-native-tooling-with-tommy-nguyen-and-adam-foxman?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Microsoft engineers presenting [rnx-kit](https://github.com/microsoft/rnx-kit?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 
@@ -73,11 +52,11 @@ GitHub discussions repo to support the rollout of the new React-Native architect
 
 [**How to publish Deno modules to NPM**](https://deno.com/blog/dnt-oak?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Kitson introduces [dnt](https://github.com/denoland/dnt/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), a tool for transforming Deno code into Node.js compatible code. They managed to publish the Deno [oak](https://github.com/oakserver/oak?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) http framework on npm, but it is not without any challenges. I find this very encouraging: it should drive incremental adoption of Deno. As a TypeScript library author, I definitively want to target both ecosystems so that's a really good incentive to give Deno a try on a small lib.
+Kitson介绍了[dnt](https://github.com/denoland/dnt/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，一个将Deno代码转换为Node.js兼容代码的工具。他们设法在npm上发布了Deno [oak](https://github.com/oakserver/oak?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) http框架，但它并非没有任何挑战。我觉得这非常令人鼓舞：它应该推动Deno的逐步采用。作为一个TypeScript库的作者，我肯定想把这两个生态系统作为目标，所以这确实是一个很好的激励，让我在一个小的lib上尝试一下Deno。
 
 [**Why Progressive Hydration is Harder than You Think**](https://www.builder.io/blog/why-progressive-hydration-is-harder-than-you-think?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Miško Hevery is the creator of Angular, he is now working on [Qwik](https://github.com/BuilderIO/qwik?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), a new generation framework with a strong focus on progressive hydration. It will be difficult for current existing frameworks to fully support this concept without changing mental models. It's not an afterthought for Qwik, unlike other frameworks.
+Miško Hevery是Angular的创建者，他现在正在开发[Qwik](https://github.com/BuilderIO/qwik?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，这是一个新一代的框架，非常注重渐进式水化。如果不改变心智模式，目前现有的框架将很难完全支持这个概念。对于Qwik来说，这并不是一个事后的想法，与其他框架不同。
 
 **Extras:**
 
@@ -99,5 +78,4 @@ Miško Hevery is the creator of Angular, he is now working on [Qwik](https://git
 -   [Putting Javascript in CSS with Paint Worklets](https://fjolt.com/article/javascript-putting-js-in-css?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   [Zap: Dart-powered web framework](https://simonbinder.eu/zap/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-
-<img width="691" alt="image" src="https://user-images.githubusercontent.com/749374/156231195-b778b71b-8e36-4e83-93f2-990cdf14f395.png">
+订阅原文：https://www.getrevue.co/profile/thisweekinreact
