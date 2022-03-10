@@ -16,7 +16,7 @@ Adam分享了他将网站从Next.js迁移到Remix的动机，以及许多其他�
 
 Storybook现在提供了一个交互测试系统（测试版），和story共存，用Jest、Playwright和测试库测试组件。这看起来相当方便。
 
-**Extras:**
+**拓展阅读:**
 
 -   🐦 [React-18 RC1](https://twitter.com/acdlite/status/1497662815519260678?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 应该很快发布
 -   🐦 [Rachel Nabors leaves the React team at Meta](https://twitter.com/rachelnabors/status/1497179514773942272?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) after greatly contributing to the [new beta React docs site](https://beta.reactjs.org/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) and React-Native docs.
@@ -41,14 +41,14 @@ Storybook现在提供了一个交互测试系统（测试版），和story共存
 
 关于支持新的React-Native架构的推广的GitHub讨论库。只读，但可以申请邀请。与React-18工作组颇为相似。已经有一些有趣的主题在讨论中。
 
-**Extras:**
+## **拓展阅读:**
 
 -   🐦 [React-Native 0.68](https://twitter.com/reactnative/status/1497273574784073729?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): pre-release announced as available (now in [RC2](https://github.com/facebook/react-native/releases/tag/v0.68.0-rc.2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter))
 -   🎥 [Glassmorphism in React Native](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=ao2i_sOD-z0): 来自William Candillon的最后一个Skia视频，很好地展示了React-Native中使用模糊/背景滤镜的可能性。
 -   🎙️ [RNR 227 - Better React Native Tooling with Tommy Nguyen and Adam Foxman](https://reactnativeradio.com/episodes/rnr-227-better-react-native-tooling-with-tommy-nguyen-and-adam-foxman?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Microsoft engineers presenting [rnx-kit](https://github.com/microsoft/rnx-kit?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 
-## Other
+## 其它
 
 [**How to publish Deno modules to NPM**](https://deno.com/blog/dnt-oak?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
@@ -58,7 +58,7 @@ Kitson介绍了[dnt](https://github.com/denoland/dnt/?utm_campaign=This%20Week%2
 
 Miško Hevery是Angular的创建者，他现在正在开发[Qwik](https://github.com/BuilderIO/qwik?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，这是一个新一代的框架，非常注重渐进式水化。如果不改变心智模式，目前现有的框架将很难完全支持这个概念。对于Qwik来说，这并不是一个事后的想法，与其他框架不同。
 
-**Extras:**
+## **拓展阅读:**
 
 -   [TypeScript 4.6](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): with [great Control Flow Analysis improvements](https://twitter.com/sebastienlorber/status/1498584209375518726?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   [Type Polymorphic Functions In TypeScript](https://www.zhenghao.io/posts/type-functions?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
