@@ -20,8 +20,6 @@ React 18新鲜出炉! 这个新版本提供了许多改进和API，相信很多�
 
 React 18奠定了一个新的基础，大多数的创新还没有到来。Dan Abramov甚至把这个版本称为[MVP](https://twitter.com/dan_abramov/status/1509008072550846464?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，其目标似乎基本上是促进并发式React的逐步采用。一些人如[Paul Henschel](https://twitter.com/0xca0a/status/1508850096447840256?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)（React-Three-Fiber）或 [James Ide](https://twitter.com/JI/status/1508849489305432066?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)已经预测到一些巨大的性能影响。
 
-I think we are entering a new era. Some web frameworks such as Svelte or Solid are becoming popular due to their simplicity and performances. Unlike React, they are truly responsive and virtual DOM free.
-
 我认为我们正在进入一个新的时代。一些网络框架，如Svelte或Solid，由于其简单性和性能，正在变得流行。与React不同，它们是真正的响应式和无虚拟DOM。
 
 [React的虚拟DOM是有代价的](https://svelte.dev/blog/virtual-dom-is-pure-overhead?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，但我认为如果没有这个抽象，Concurrent React是很难实现的。随着React 18+，我们将最终知道这个代价是否值得付出。在未来的几年里，将React的用户体验、DX和性能与Svelte或Solid进行比较将是非常有趣的。
