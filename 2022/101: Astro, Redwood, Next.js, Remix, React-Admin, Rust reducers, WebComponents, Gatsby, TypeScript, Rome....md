@@ -1,36 +1,8 @@
 This Week In React #101: Astro, Redwood, Next.js, Remix, React-Admin, Rust reducers, WebComponents, Gatsby, TypeScript, Rome...
-===
 
-Hi everyone!
-
-A nice diversity of React articles this week! I liked those with Rust/WASM and Web-Components.
-
-Last week was Launch Week for Astro and Redwood, there were some exciting announcements.
-
-It's calm on the React-Native side.
-
-TypeScript 4.7 is available in beta, another great release with ESM support in particular!
-
-We have more than **4000 subscribers** here! Thanks for reading me every week ;)
-
-Note: I'm still figuring out how to make this newsletter sustainable. If your company could [sponsor](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter) the newsletter (product, job, conf ad) please let me know or put me in touch. I [build this newsletter transparently in public](https://www.indiehackers.com/product/french-react-newsletter?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), sharing my current income and after 2 years it covers like 50% of my hourly rate. Not too bad, but a little help will be appreciated 😉 I'm still not very good at selling ads on the English newsletter 😅 it seems to require more cold-outreach.
-
-🙏 **Support the newsletter:**
-
--   😘 **Recommend it to your friends**: it really helps!
--   💸 [**Sponsor This Week In React**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   😍 [**Write testimonials on Twitter**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   🧵 [**Retweet the latest Twitter thread**](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
--   📨 Reply to this [**email**](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter): feedback is welcome
--   👥 Follow on [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
-
-If you like this newsletter, subscribe in priority there:
-
+订阅原文:
 -   🇬🇧 [ThisWeekInReact.com](https://thisweekinreact.com/)
 -   🇫🇷 [ReactHebdo.fr](https://reacthebdo.fr/)
-
-
-[![](https://user-images.githubusercontent.com/749374/153181021-8fdb0ece-270a-4cf2-980b-4557d04316ad.png)](https://thisweekinreact.com)
 
 ---
 
@@ -38,37 +10,41 @@ If you like this newsletter, subscribe in priority there:
 
 [**Astro Server-Side Rendering**](https://astro.build/blog/experimental-server-side-rendering/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Astro is a modern meta-framework capable of using any UI lib (including React). It now supports server-side rendering, available experimentally in [v1.0 beta](https://astro.build/blog/astro-1-beta-release/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter). Like Remix, the framework offers a layer of [adapters](https://github.com/withastro/astro/tree/main/packages/integrations?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) for deployment to multiple targets.
+Astro是一个现代元框架，能够使用任何UI库（包括React）。它现在支持服务器端渲染，在[v1.0 beta](https://astro.build/blog/astro-1-beta-release/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)测试版中可以实验。与Remix一样，该框架提供了一个 [adapters](https://github.com/withastro/astro/tree/main/packages/integrations?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)层，用于部署到多个目标。
 
 [**React-admin V4: Build Your Own Framework**](https://marmelab.com/blog/2022/04/11/react-admin-v4-build-your-own-framework.html?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-François takes as an example a simple admin interface in React, based on MUI and React-Hook-Form. The code is initially quite verbose, 90 lines. He gradually refactors this code by creating reusable abstractions, to end up with a declarative and expressive code of 20 lines.
+François以React中一个简单的管理界面为例，该界面基于MUI和React-Hook-Form。这段代码最初是相当冗长的，有90行。他通过抽象和复用，重构了这段代码，最终实现相同的效果只用了20行代码。
 
-He explains that these abstractions are actually the v4 of React-Admin ([v4.0.0-RC.1](https://github.com/marmelab/react-admin/releases/tag/v4.0.0-rc.1?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) available). This new version is based on a more modern stack and is more modular: it exposes high-level components (based on MUI by default, can be swapped) but also low-level primitives to create your own framework. See also the full [series of v4 articles](https://marmelab.com/en/blog/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#react-admin).
+他解释说，这些抽象实际上是React-Admin的第四版（[v4.0.0-RC.1](https://github.com/marmelab/react-admin/releases/tag/v4.0.0-rc.1?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)）。这个新版本基于更现代的堆栈，并且更加模块化：它暴露了高级组件（默认基于MUI，可以交换），但也有低层单元来创建你自己的框架。[v4的全部系列文章](https://marmelab.com/en/blog/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#react-admin)。
 
 [**An Overlooked Factor For Performance Optimization In React**](https://www.zhenghao.io/posts/top-level-perf?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 Interesting reflection on the need (or not) to memoize the value of a React context according to the position of the provider in the tree. Personally, I still prefer to always memoize for safety, as you never know if the provider will not be moved somewhere else.
 
+关于是否需要（或不需要）根据provider在树中的位置来记忆React上下文的值的有趣的思考。就个人而言，为了安全起见，我还是倾向于总是记忆化，因为你永远不知道提供者是否会被移到其他地方。
+
 [**Writing Redux Reducers in Rust**](https://fiberplane.dev/blog/writing-redux-reducers-in-rust/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Feedback on the integration of existing Rust business code into a React app through WebAssembly and the challenges encountered: non-ideal binding, serialization WASM bridge cost... They need to access the same state on both sides (Rust and TypeScript). Solution: create the reducers in Rust, and return a state diff to TypeScript.
+通过WebAssembly将现有的Rust业务代码整合到React应用中，以及遇到的挑战：非理想的绑定，序列化WASM桥梁等场景的反馈。他们需要在两边（Rust和TypeScript）访问相同的状态。解决方案：在Rust中创建还原器，并向TypeScript返回一个状态差异。
 
 [**How to Create and Export Web Components From a React Application**](https://spin.atomicobject.com/2022/04/11/export-web-components/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
-Shows how to use React to create a Web Component. It looks relatively simple, and can be useful in some specific contexts 🤔. Not to be confused with the use of Web Components from React ([will be officially supported later](https://twitter.com/reactjs/status/1508899112074231810?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)).
+展示了如何使用React来创建一个Web组件。它看起来比较简单，在一些特定的情况下🤔可能会很有用。不要与React的Web Components的使用相混淆（[以后将正式支持](https://twitter.com/reactjs/status/1508899112074231810?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)）。
 
 [**React components composition: how to get it right**](https://www.developerway.com/posts/components-composition-how-to-get-it-right?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 Gives some hints on when/how to split into smaller subcomponents. Also evokes an important Clean Code principle (without naming it): [Single Level of Abstraction](https://medium.com/trabe/coding-react-components-single-level-of-abstraction-e60f25676235?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter).
 
-**Extras:**
+对何时/如何分割成更小的子组件给出了一些建议。也唤起了一个重要的清洁代码原则（没有命名它）。[单一层次的抽象](https://medium.com/trabe/coding-react-components-single-level-of-abstraction-e60f25676235?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)。
+
+**拓展阅读:**
 
 -   🧵 [React 18 + TypeScript](https://twitter.com/reactjs/status/1512453230504124420?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): typings released with necessary breaking changes. In particular the [TypeScript type for `React.FC` does not include `children` anymore](https://twitter.com/dan_abramov/status/1512833611401150474?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter). Also check [Removal Of Implicit Children](https://solverfox.dev/writing/no-implicit-children/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), and this [codemod](https://github.com/eps1lon/types-react-codemod?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) to migrate.
 -   📜 [Test component interactions with Storybook](https://storybook.js.org/blog/test-component-interactions-with-storybook/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): complete guide to create and execute interaction tests in Storybook stories thanks to the `play()` function.
 -   📜 [How to easily reduce your NextJS bundle size by 30%?](https://www.flavienbonvin.com/reduce-next-js-bundle/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) feedback, quantified impact of 4 actions relatively easy to implement. Using dynamic imports provides the best ROI.
 -   📜 [React 18 Quick Guide & Core Concepts Explained](https://dev.to/shrutikapoor08/react-18-quick-guide-core-concepts-explained-519p?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): good React 18 major changes summary.
--   📜 [Redwood Startup Fund](https://tom.preston-werner.com/2022/04/07/the-redwood-startup-fund.html?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): follow-up of last week's [Redwood 1.0 Launch Week](https://v1launchweek.redwoodjs.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter). $1M fund by Tom Preston-Werner for startups using React RedwoodJS framework (small "existential" $25k--$50k tickets)
+-   📜 [Redwood Startup Fund](https://tom.preston-werner.com/2022/04/07/the-redwood-startup-fund.html?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): follow-up of last week's [Redwood 1.0 Launch Week](https://v1launchweek.redwoodjs.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   📜 [Bad Habits of Mid-Level React Developers](https://dev.to/srmagura/bad-habits-of-mid-level-react-developers-b41?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   📜 [Improving Web Performance with React Hydration Strategies](https://medium.com/cdiscount-engineering/improving-web-performance-with-react-hydration-strategies-3117f71a1695?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 -   💡 [Gatsby RFC: New Bundler in Gatsby](https://github.com/gatsbyjs/gatsby/discussions/35357?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): may incrementally adopt esbuild according to current benchmarks?
@@ -94,13 +70,15 @@ Gives some hints on when/how to split into smaller subcomponents. Also evokes an
 -   🎙️ [React Native Radio 231 - Using Flipper's Flamegraph Tool](https://reactnativeradio.com/episodes/rnr-231-using-flippers-flamegraph-tool?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 
-## Other
+## 其它
 
 [**Announcing TypeScript 4.7 Beta**](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
 
 Another great TypeScript release! The long-awaited ES Modules support and [package.json "exports"](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#package-json-exports-imports-and-self-referencing) which allows to create several entry points for the same Node.js package. Many other improvements and new features, including ["moduleSuffixes"](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#resolution-customization-with-modulesuffixes) useful for React-Native.
 
-**Extras:**
+又一个伟大的TypeScript版本! 期待已久的ES模块支持和[package.json "exports"](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#package-json-exports-imports-and-self-referencing)，允许为同一个Node.js包创建多个入口点。许多其他改进和新功能，包括对React-Native有用的  ["moduleSuffixes"](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#resolution-customization-with-modulesuffixes)。
+
+**拓展阅读:**
 
 -   [Announcing Rome Formatter](https://rome.tools/blog/2022/04/05/rome-formatter-release?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): broken link in last edition 😅 Rome offers a code formatter written in Rust. Mostly compatible with Prettier, but 9-12x faster, and able to format invalid code!
 -   [Node v12.22.12](https://nodejs.org/en/blog/release/v12.22.12/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): last v12 LTS
