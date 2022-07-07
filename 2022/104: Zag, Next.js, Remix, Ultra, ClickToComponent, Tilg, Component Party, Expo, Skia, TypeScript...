@@ -1,0 +1,104 @@
+This Week In React #104: Zag, Next.js, Remix, Ultra, ClickToComponent, Tilg, Component Party, Expo, Skia, TypeScript...
+
+## React
+
+[**Click To Component**](https://github.com/ericclemmons/click-to-component?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+新的非常实用的库，它允许轻松打开React组件的源文件，只需在界面上简单的`Option + Click` 。支持CRA、Next.js、Vite... 只适用于VS Code，但也可以支持其他IDE，如[Intellij](https://github.com/ericclemmons/click-to-component/pull/35?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)。
+
+[**Zag**](https://zagjs.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Zag是一个基于状态机的原始组件的集合。这使得逻辑与框架解耦成为可能，并为React、Vue、Solid...提供一个绑定。这个新的解决方案将允许React [Chakra UI](https://chakra-ui.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)库更容易地适应其他框架，同时共享更多的行为代码。
+
+[**Why I don't miss React: a story about using the platform**](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Jack在Google从事Chrome DevTools工作2年了。从那时起，他不再使用React，并分享了他过渡到不需要依赖的标准化网络API的反馈：表单、自定义元素...
+
+[**Moving from Next to Remix**](https://blog.openreplay.com/moving-from-next-to-remix?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Kristofer根据个人兴趣，将他的个人网站从Next.js迁移到了Remix。他给出了自己的反馈，并分享了对Lighthouse评分的影响。他列出了他必须做出的主要变更：Chakra集成、Link组件、路由、数据获取、元数据......
+
+[**How HashiCorp developers iterate faster with ISR**](https://vercel.com/blog/how-hashicorp-developers-iterate-faster-with-isr?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+关于使用Next.js的增量静态再生来减少HashiCorp的文档网站的构建时间的反馈。新的 "按需ISR "模式使得Next.js的缓存失效成为可能，因此在更新发布时可以立即得到反馈。
+
+**拓展阅读**
+
+-   💡 [Next.js Router Upgrade](https://twitter.com/leeerob/status/1521659624516030466?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Next.js is going to get nested routes, and a new design to work with Server Components and React 18 features
+-   🧑‍🎨 [The 3D design too Spline can now export to React-Three-Fiber](https://twitter.com/splinetool/status/1519739608484954114?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): this can enable you to [make your scenes interactive and add physics](https://twitter.com/Cuadraman/status/1519773758998863876?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   🔗 [Component Party](https://component-party.pages.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): site to easily compare the syntax of React with other frameworks (Vue, Svelte, Solid...) on different use-cases
+-   🏢 [Convex](https://www.convex.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): new serverless real-time database with a React binding. They just [raised $27m](https://blog.convex.dev/series-a/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) and integrates well with [Netlify](https://www.netlify.com/blog/state-management-with-convex/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) or [Vercel](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=HrDrcmGHORg)
+-   🎥 [The Story of Concurrent React](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=NZoRlVi3MjQ): 10 minutes on the story bind Concurrent React, from 2016 to today. Great research work
+-   📦 [Ultra 1.0](https://ultrajs.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): the modern React meta-framework for Deno just [annonced its v1](https://twitter.com/mutual__respect/status/1516454593718198274?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📦 [React 18.1](https://twitter.com/dan_abramov/status/1519114806376206336?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): mostly bugfixes
+-   📦 [useTilg](https://github.com/shuding/tilg?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): convenient React hook for debugging
+-   📦 [zustand v4.0.0-rc.1](https://twitter.com/dai_shi/status/1520049919918510080?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📦 [Gatsby 4.13](https://twitter.com/GatsbyChangelog/status/1519033367492182016?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   🐦 [Using useReducer to manage one-way boolean state](https://twitter.com/markdalgleish/status/1521304112738217984?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📜 [Building a Terminal Wordle Game with React Ink](https://spin.atomicobject.com/2022/04/21/terminal-wordle-react-ink/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📜 [Managing React Monorepos with Nx](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=yNLfMaFhaxM)
+
+## React-Native
+
+[**Expo SDK 45 beta is now available**](https://blog.expo.dev/expo-sdk-45-beta-is-now-available-88507051f6d2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+新的SDK Expo进入测试阶段，为期一周。一些很酷的新东西。
+
+- React-Native 0.68.1: Expo升级到最新版本，但还没有启用Fabric渲染器
+- 重新设计了Expo Go，更好地整合了EAS更新和查看/打开分支的能力。
+- 一些库被迁移到JSI和/或[Expo Sweet Module API](https://blog.expo.dev/a-peek-into-the-upcoming-sweet-expo-module-api-6de6b9aca492?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)中。
+- 一个[全新的Expo CLI](https://blog.expo.dev/new-versioned-expo-cli-cf6e10632656?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)（测试版），将在本地而不是全球范围内进行版本安装。
+- Expo包装库已被废弃：原始的本地库可以通过配置插件使用
+
+[**React Native Skia - For Us, For You, and For Fun**](https://shopify.engineering/react-native-skia-shopify?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Skia是谷歌的2D引擎，你肯定也在使用它。Chrome、Flutter、Android... Shopify支持React-Native-Skia的开发，以提供React-Native中缺少的图形/2D原语，并且在实现复杂的设计时不会受到限制。该库提供了一个富有表现力的声明式API，但也提供了一个与Flutter兼容的命令式低级API，这可能有助于通过React-Native-Web和CanvasKit提供网络支持。
+
+**拓展阅读**
+
+-   📦 [React-Native 0.69-rc.0](https://github.com/reactwg/react-native-releases/discussions/21?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): first version based on React 18, with the possibility of using concurrent features if you enable the new architecture!
+-   📦 [React-Native-Graph](https://github.com/margelo/react-native-graph?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): new graph library with animations, based on React-Native-Skia
+-   🎥 [Charts with React-Native-Skia](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=xeLdmn3se1I): latest video from William Candillon, related to the lib above 😉
+-   🐦 [React-Native-WishList preview](https://twitter.com/margelo_io/status/1519021945295151109?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Marc Rousavy is working on a new powerful virtualized list lib, which should fix the perf shortcomings of the existing ones
+-   🎥 [RN.live](https://rn.live/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Jamon Holmgren's livestream channel
+-   🎙️ [RNR 233 - React 18 and the Future of React Native](https://reactnativeradio.com/episodes/rnr-233-react-18-and-the-future-of-react-native?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📜 [Using RevenueCat with Expo's Managed Workflow](https://www.revenuecat.com/blog/using-revenuecat-with-expo?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): shows how easy it is to integrate a native lib into Expo
+-   📜 [Twitter going all in on Jetpack Compose](https://android-developers.googleblog.com/2022/04/twitter-going-all-in-on-jetpack-compose.html?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): It still fascinates me so much to know that Twitter uses React-Native on the web, but not React-Native on mobile 😄
+-   📜 [Apple Gets Ready to Eliminate Almost 30% of Apps in the App Store](https://appfigures.com/resources/insights/20220429?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): take care, your old app could be unpublished 😅
+-   📜 [What is the performance of your users device?](https://blog.bam.tech/developer-news/what-is-the-performance-of-your-users-devices?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   📜 [A performant way to use PouchDB@7 on React Native in 2022](https://dev.to/craftzdog/a-performant-way-to-use-pouchdb7-on-react-native-in-2022-24ej?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+## 其它
+
+[**TypeScript Error Translator**](https://ts-error-translator.vercel.app/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+一个正在进行中的新工具，将你的TypeScript错误翻译成人类语言，易于理解，并有额外的解释([源](https://github.com/mattpocock/ts-error-translator?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter))。它甚至可以与你的IDE整合（[VS Code 拓展](https://twitter.com/mpocock1/status/1521145755007922176?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)）。
+
+[**Keeping TypeScript Type Guards safe and up to date**](https://dev.to/noriste/keeping-typescript-type-guards-safe-and-up-to-date-a-simpler-solution-ja3?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+
+带来了一个我从未过的问题😅：如果你有一个基于对象属性的类型保护，而你添加了第二个属性，你的类型保护就会变质，但TypeScript仍然可以编译。
+
+**Extras:**
+
+-   [Web Scraping via Javascript Runtime Heap Snapshots](https://www.adriancooney.ie/blog/web-scraping-via-javascript-heap-snapshots?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): original scraping technique, which consists of extracting JS objects directly in memory
+-   [Node 16.15](https://nodejs.org/en/blog/release/v16.15.0/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): experimental `fetch` support backported
+-   [Lerna is now an officially dead project](https://twitter.com/tomasz_ducin/status/1519436453729734657?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter). The project is officially unmaintained, but there are [alternatives like Nx and Turborepo](https://twitter.com/housecor/status/1519653407962894337?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [Nx 14](https://twitter.com/NxDevTools/status/1521124174663766018?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) freshly released
+-   [Zaplib post-mortem](https://zaplib.com/docs/blog_post_mortem.html?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter#-zaplib-post-mortem): feedback that demonstrates once again that Rust and Wasm is not always faster than JavaScript
+-   [WebAssembly vs Javascript](https://ianjk.com/webassembly-vs-javascript/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): "don't use WebAssembly primarily for performance"
+-   [Detecting UI components with TypeScript Compiler API](https://fwouts.com/articles/previewjs-detecting-components?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [Misusing TypeScript Assertion Functions for Fun and Profit](https://v5.chriskrycho.com/journal/misusing-typescript-assertion-functions-for-fun-and-profit/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [SemVer for TS in Practice](https://v5.chriskrycho.com/journal/semver-for-ts-in-practice/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [Narrowing Types in TypeScript](https://formidable.com/blog/2022/narrowing-types/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [google/wireit: upgrades your npm scripts to make them smarter and more efficient](https://github.com/google/wireit?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+-   [Four Eras of JavaScript Frameworks](https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+
+ <img width="638" alt="CleanShot 2022-05-04 at 10 20 38@2x" src="https://user-images.githubusercontent.com/749374/166645566-bafd28ec-6daf-46fc-bd74-e2e8bbb53718.png">
+ 
+   ---
+  
+  订阅原文:
+-   🇬🇧 [ThisWeekInReact.com](https://thisweekinreact.com/)
+-   🇫🇷 [ReactHebdo.fr](https://reacthebdo.fr/)
