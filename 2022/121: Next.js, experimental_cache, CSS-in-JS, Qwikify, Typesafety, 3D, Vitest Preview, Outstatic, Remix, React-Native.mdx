@@ -1,0 +1,125 @@
+---
+slug: /121
+title: "This Week In React #121: Next.js, experimental_cache, CSS-in-JS, Qwikify, Typesafety, 3D, Vitest Preview, Outstatic, Remix, React-Native..."
+authors: [slorber]
+date: 10-25-2022
+image: /img/TWIR_POST.png
+---
+
+
+大家好！
+
+现在是会议季：ViteConf的重播已经开始，React Advanced刚刚结束，还有更多的会议即将到来。
+
+Next.js大会在几个小时后开始。我们可能会得到Next.js 13的公告，以及嵌套式布局和其他一些以Turbo🤭开头的超级酷的东西。我们下周再讨论这个问题吧。
+
+所有的主机厂商同意改善他们对Next.js支持，包括：Netlify, Cloudflare, Microsoft...
+
+不要错过William Candillon的React-Native视频第五季，该季今天开始。
+
+我上个月与PodRocket录制了一集[关于Docusaurus 2.0的播客](https://podrocket.logrocket.com/docusaurus)。完全忘了提了😅我想在未来做更多的播客节目，所以请邀请我吧! 
+
+
+
+## ⚛️ React
+
+**[Why We're Breaking Up with CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)**
+
+为什么我们要与CSS-in-JS分手？
+
+Sam是Emotion的维护者，它是最受欢迎的CSS-in-JS库之一。他解释了CSS-in-JS的优点和缺点，重点是运行时库的问题。对于他的公司Spot来说，序列化样式的成本太高了。他们用Sass模块（CSS模块+Sass）取代了Emotion，并建立了一个CSS实用系统。在Docusaurus上，我们使用CSS模块，我确认它是一个很好的无运行时和相对简单的替代方案。DX没有那么好，但还是相当可以接受。
+
+这篇文章引发了许多有趣的讨论。人们已经知道，带有运行时的CSS-in-JS库会导致性能问题。[Dan Abramov证实](https://twitter.com/dan_abramov/status/1584835028986793984)了这一点，并且[不希望在新的React doc网站上使用任何运行时](https://github.com/reactjs/reactjs.org/issues/5115)。Ryan Florence提到了[Chakra的性能问题](https://twitter.com/ryanflorence/status/1582835729360572416)，它使用了Emotion。
+
+Tailwind仍然是一个不错的选择。对我来说，它可以被归入CSS-in-JS无运行时类别，特别是在React环境中，Tailwind的样式是通过JSX完成的。有些人质疑它的[可维护性](https://twitter.com/hi__mayank/status/1584261503670448128)，但在实践中它运行得很好。
+
+**[Qwik React](https://qwik.builder.io/qwikcity/integrations/react/)**
+
+Qwik是一个创新的SPA框架，[避免了与客户端水化有关的性能问题](https://www.builder.io/blog/hydration-is-pure-overhead)。它现在可以通过`qwikify$()`函数与React集成，以包装任何现有的React组件。客户端：指令（受Astro启发）允许控制React组件何时被水化，并具有很大的颗粒度。该演示将Material UI整合到Qwik应用中。也请看[这个视频](https://www.youtube.com/watch?v=fLH28rDu97I)。我认为这是一个很好的解决方案，可以避免对这个新的框架进行全盘否定，而逐步尝试。我们还可以保留React的跨平台属性，同时采用Qwik来提高网络上的性能。
+
+**[Fully Typed Web Apps](https://www.epicweb.dev/fully-typed-web-apps)**
+
+Kent C. Dodds解释了具有端到端类型安全的兴趣，从数据库到用户界面，通过不同的边界：网络、本地存储、数据库......。他谈到了验证（模式、类型保护）、类型生成（Prisma）和约定（Remix）。他解释了如何通过Remix实现这种体验，这要归功于推理：使用`typeof`比使用`as`更好。
+
+**[Building an interactive WebGL experience in Next.js](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)**
+
+Vercel解释了他们如何基于React-Three-Fiber为[Next.js会议创造了一个令人印象深刻的沉浸式注册体验](https://nextjs.org/conf)。如果没有3D/WebGL/Three.js的经验，理解起来还是很复杂的，但连续几步的解构很有意思，让人了解到做创意开发的思维方式。
+
+- 👀 [React Cache API Pull-Request](https://github.com/facebook/react/pull/25506): exposes a new `React.experimental_cache` API
+- 📖 [New beta doc - cloneElement](https://twitter.com/dan_abramov/status/1582814754426433537)
+- 📦 [Vitest Preview](https://www.vitest-preview.com/): permits to visually debug Vitest tests. Little brother of [Jest Preview](https://www.jest-preview.com/).
+- 📦 [Outstatic - A static CMS for Next.js](https://outstatic.com/): new Git-based CMS that integrates nicely with Next.js. Simple user-friendly editor with the ability to upload images.
+- 📜 [Netlify - Background and Scheduled API Routes for Next.js](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs/): Netlify using its background functions to call Next.js API based on cron expressions.
+- 📜 [Cloudflare Pages support for Next.js Edge Runtime](https://blog.cloudflare.com/next-on-pages/): Cloudflare now supports Next.js, only via the `experimental-edge` runtime that can run on Cloudflare Workers (unlike the Node.js runtime). Their solution is based on [Vercel Build Output API](https://vercel.com/blog/build-output-api), which seems to pave the way for better portability of edge-first frameworks between different clouds.
+- 📜 [Microsoft - Extending Next.js support in Azure Static Web Apps](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975): Azure will now support Next.js SSR (previously: only SSG).
+- 📜 [Persist inputs after a form submit in Remix](https://sergiodxa.com/articles/persist-inputs-after-a-form-submit-in-remix): proposes a progressive enhancement solution to keep the values of a form after a submission. 2 solutions: return the values in the Remix action or use the flash session.
+- 📜 [Currying Layout Component Patterns in Next.js](https://creativedesignsguru.com/currying-nextjs-layout/): suggest to parametrize the `getLayout` of Next.js to create Layout variants without leading to unmount/remount. Nice trick today, might become less relevant with the upcoming nested layouts support.
+- 📜 [Throwing vs. Returning responses in Remix](https://sergiodxa.com/articles/throwing-vs-returning-responses-in-remix)
+- 📜 [Lessons learned from moving to Recoil.js](https://kitemaker.co/blog/lessons-learned-from-moving-to-recoil)
+- 📜 [Separate API Layers In React Apps](https://profy.dev/article/react-architecture-api-layer)
+- 🎥 [Is the new React use hook a footgun?](https://www.youtube.com/watch?v=ytXM05PVcFU)
+- 🎥 [React Advanced London 2022 - Day 1](https://www.youtube.com/watch?v=1x7mI_xuVVo)
+- 🧵 [Lottie vs Rive](https://twitter.com/guidorosso/status/1582086637328031745): Lottie is quite popular in the React ecosystem but its competitor Rive looks much more performant at runtime.
+- 🐦 [Zustand code in a tweet](https://twitter.com/dai_shi/status/1583082766081531905)
+- 🔗 [New website for Storybook](https://twitter.com/storybookjs/status/1583175829009289216)
+
+
+## 📱 React-Native 
+
+- 🎥 [Headspace Player - “Can it be done in React Native?”](https://www.youtube.com/watch?v=pErnuAx5GjE): season 5 just started today 🤗
+- 🤫 [Some rumors going around about Expo SDK 47](https://twitter.com/tsapeta/status/1582831949030522881): a promising SDK!
+- 🗣 [The new architecture is here… what now? 3.0](https://twitter.com/Kelset/status/1583416697741975552): React Advanced talk slides from Lorenzo (Microsoft).
+- 📈 [React-Native performance brenchmarks](https://twitter.com/almouro/status/1584628478963777537): Alexandre does daily benchmarks and compares the performance of the old VS the new architecture on various scenarios.
+- 📖 [Reassure documentation](https://callstack.github.io/reassure/): Reassure has a brand new Docusaurus doc site 🤗
+- 📖 [Expo Docs Updates - new Flipper plugin integration guide](https://twitter.com/amanhimself/status/1583202477469765633)
+- 📦 [create-react-native-library 0.25](https://twitter.com/satya164/status/1583462129235263490): Kotlin Turbo module template
+- 📦 [Expo Router 0.0.31](https://twitter.com/Baconbrix/status/1582875434567409664)
+- 📦 [Expo Router 0.0.33](https://twitter.com/Baconbrix/status/1584289284713947136)
+- 📦 [Realm JavaScript v11 - Hermes Support, Realm React, Flipper, and Much More](https://www.mongodb.com/developer/products/realm/realm-javascript-v11-react-native/)
+- 🎙️ [RNR 249 - A Redux Maintainer’s Thoughts on RTK vs MST](https://reactnativeradio.com/episodes/rnr-249-a-redux-maintainers-thoughts-on-rtk-vs-mst)
+
+
+
+## 🧑‍💻 Jobs
+
+🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.
+
+🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.
+
+💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 Other
+
+- [Let’s talk about web components](https://bradfrost.com/blog/post/lets-talk-about-web-components/): Brad Frost关于Web Components的有趣阅读，它不一定与React不兼容，但可以补充它（例如：React应用中的设计系统）。目前的困难（SSR）最终会被克服。
+- [Replit App](https://twitter.com/amasad/status/1582754714575257600): new app to code on your phone (made with [Expo](https://twitter.com/amasad/status/1582968657675661314)). There are templates to code in Next.js.
+- [Introducing Node.js 19](https://www.redhat.com/en/blog/introducing-nodejs-19) - Note: Node.js 18 enters LTS today!
+- [Introducing Stately Studio 1.0](https://stately.ai/blog/introducing-stately-studio-10): XState state machine editor
+- [Vite 4 plans](https://github.com/vitejs/vite/discussions/10570): upgrade to Rollup 3, es2020 compat...
+- [ViteConf 2022 replay](https://viteconf.org/2022/replay)
+- [Turborepo 1.6 - Use Turborepo in non-monorepos](https://twitter.com/turborepo/status/1583518617970233346)
+- [Solid 1.6](https://twitter.com/solid_js/status/1583016386984480768)
+- [Futuristic CSS](https://www.smashingmagazine.com/2022/10/futuristic-css/)
+- [Is There Too Much CSS Now?](https://css-tricks.com/is-there-too-much-css-now/)
+- [npm bin script confusion: Abusing ‘bin’ to hijack ‘node’ command](https://socket.dev/blog/npm-bin-script-confusion)
+- [Tailwind CSS v3.2: Dynamic breakpoints, multi-config, and container queries](https://twitter.com/adamwathan/status/1582793658168152065)
+- [Tailwind CSS v3.2: revisiting my “feature creep” warning](https://www.brycewray.com/posts/2022/10/tailwind-css-v3-2-revisiting-feature-creep-warning/)
+- [Can I DevTools - Compare the features of browsers DevTools. ](https://canidev.tools)
+- [Vercel - Regional Edge Functions](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge)
+- [Deno - Which serverless edge platform has the fastest git deployments?](https://deno.com/blog/fastest-git-deploys-to-the-edge)
+- [Cloudflare Workers and micro-frontends: made for one another](https://blog.cloudflare.com/better-micro-frontends/)
+- [Blink: Intent to Ship: CSS Color Module Level 4 + color-mix()](https://twitter.com/intenttoship/status/1583110354074116096)
+- [Release Notes for Safari Technology Preview 156](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/)
+- [WebKit Features in Safari 16.1](https://webkit.org/blog/13399/webkit-features-in-safari-16-1/)
+- [JavaScript metaprogramming with the 2022-03 decorators API](https://2ality.com/2022/10/javascript-decorators.html)
+
+---
+
+## 🤭 Fun {#fun}
+
+[![Meme - VSCode running on iWatch](/emails/issues/121/meme.png)](https://twitter.com/rohanpdofficial/status/1583455633134977026)
