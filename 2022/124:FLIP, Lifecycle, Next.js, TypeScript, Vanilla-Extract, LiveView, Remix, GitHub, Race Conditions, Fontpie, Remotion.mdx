@@ -1,0 +1,110 @@
+---
+slug: /124
+title: "This Week In React #124: FLIP, Lifecycle, Next.js, TypeScript, Vanilla-Extract, LiveView, Remix, GitHub, Race Conditions, Fontpie, Remotion..."
+authors: [slorber]
+date: 11-15-2022
+image: /img/TWIR_POST.png
+---
+大家好！
+
+在经过短暂的几周后，React生态终于缓了口气，各种公告也逐渐放慢！
+
+我们仍然有一些不错的文章在发表。Next.js的TypeScripts针对Next.js的插件看起来相当棒！
+
+GitHub Universe会议已经结束。Guthub看起来准备在更多的场景中使用React，在一些可交互的文档中也可以使用实现MDX的Github Blocks.
+
+
+
+<!-- truncate -->
+
+**💡 [在Twitter上订阅期刊](https://slo.im/thread) - visual format 🎨**
+
+---
+
+
+## ⚛️ React
+
+### [Inside Framer's Magic Motion](https://www.nan.fyi/magic-motion)
+
+一篇有趣生动的介绍Layout动画的可交互文章。它极大的解构了FLIP技术的，允许通过css transforms(position，scale)使这种转化表现的更好。我们一步步重现了Framer Motion的布局动画。
+
+类似的主题，我推荐也可以阅读[Frameer Motion动画布局概览](https://blog.maximeheckel.com/posts/framer-motion-layout-animations/).
+
+### [Timeline of a React Component With Hooks](https://julesblom.com/writing/react-hook-component-timeline)
+
+一篇含有可交互Demo的文章，展示了React组件的生命周期，包含hooks、refs和Dom 更新/渲染（移动端不能用）。还包括一个知识测验，有很多文章引用。
+
+### [Next.js 13 TypeScript Plugin](https://twitter.com/delba_oliveira/status/1592209522281439232)
+
+Shu Ding正在开发一个TypeScript 语言服务插件（[源码](https://github.com/vercel/next.js/blob/canary/packages/next/server/next-typescript.ts)）,通过在Next.js和Server Components约定的基础上，包含文档、新的错误以及自动完成，大大改善了Next.js DX。这很好的弥补了TypeScript[无法从ES Module导出类型的缺陷](https://github.com/microsoft/TypeScript/issues/38511)，也是框架作者强烈呼吁的功能。
+
+
+### [Writing Performant CSS with vanilla-extract](https://www.lekoarts.de/javascript/writing-performant-css-with-vanilla-extract)
+
+一篇非常详尽介绍[vanilla-extract](https://vanilla-extract.style/)的文章，这是Mark Dalgleish(CSS Modules的作者)开发的无运行时的CSS-in-JS库。还提到了它的原子CSS overlay [Sprinkles](https://vanilla-extract.style/documentation/packages/sprinkles/)。基于React的示例：重新实现了Tailwind UI组件。和Tailwind以及其它CSS-in-JS解决方案做了很多比较。它看起来很强大，实际上用起来并不简单，我们必须好好学习。
+
+---
+
+- 📖 React beta版本文档: [class component API ref (WIP)](https://twitter.com/dan_abramov/status/1592262830304251908)
+- 🐙 [GitHub UI using React](https://twitter.com/rauchg/status/1591464351990697984) ([Hacker News thread](https://news.ycombinator.com/item?id=33576722)): GitHub似乎越来越多地使用React。他们也有一个React设计系统。 [Primer React](https://primer.style/react/)。即将推出的[GitHub Blocks](https://blocks.githubnext.com/)功能可以使README成为互动的，也是[用MDX实现的](https://twitter.com/idangazit/status/1590726137638195200)。
+- 📜 [Fetching data in React: the case of lost Promises](https://www.developerway.com/posts/fetching-in-react-lost-promises):  这是一篇图文并茂的交互式文章，介绍了在发出请求时可能出现的竞赛条件。给出了一些技术来避免它们。我也写了一篇关于这个问题的[文章](https://sebastienlorber.com/handling-api-request-race-conditions-in-react)😜（这两篇文章都值得一读，很有互补性）。
+- 📜 [A Love Letter to React](https://fly.io/blog/love-letter-react/):  Phoenix（Elixir框架）的创建者解释了他是如何受到React的启发而创建LiveView的：一个在服务器端渲染的HTML上添加互动性的解决方案。LiveView让我想起了Remix!
+- 📜 [Open Development for Remix](https://remix.run/blog/open-development): Remix希望该项目由社区驱动。一切都变得公开：[roadmap](https://github.com/orgs/remix-run/projects/5/views/1)/进程，以及在Youtube上进行的规划会议。
+- 📜 [Type-safe environment variables on both client and server with Remix](https://dev.to/gugaguichard/type-safe-environment-variables-on-both-client-and-server-with-remix-54l5): 有意思的解决方案是用Zod解析env变量，并将其中一些变量暴露给客户端，包括类型安全和自动完成。
+- 📜 [Chromatic - Interaction tests for user behavior](https://www.chromatic.com/blog/interaction-tests-for-user-behavior/): Storybook interaction tests are now integrated with Chromatic SaaS
+- 📜 [React Server vs Client components in Next.js 13](https://kulkarniankita.com/react/react-server-client-components)
+- 📜 [What is a state manager](https://www.reatom.dev/general/what-is-state-manager)
+- 📜 [A novel schema-first approach to building forms](https://www.vazco.eu/blog/a-novel-schema-first-approach-to-building-forms)
+- 📜 [Creating fluffy trees with Three.js (part 1)](https://douges.dev/blog/threejs-trees-1)
+- 📊 [I compared deploy speeds for Reflame, Vercel, Netlify, Cloudflare Pages on the same repo](https://blog.reflame.app/i-compared-deploy-speeds-for-reflame-vercel-netlify-cloudflare-pages-on-the-same-repo): the marketing around "instant deploy" is not always true.
+- 💰 [Remotion - We raised CHF 180k to simplify programmatic video!](https://www.remotion.dev/blog/seed-funding): I bring my modest contribution 🤭
+- 🐦 [Comparison between Next.js 12 and the Next.js 13 experimental `app` dir!](https://twitter.com/lydiahallie/status/1591120215189749760)
+- 🗣 [RemixConf 2023 CFP Open](https://twitter.com/remix_run/status/1590513919902507008)
+- 📦 [Fontpie](https://github.com/pixel-point/fontpie): new CLI solution to avoid custom font layout shifts (see this [demo](https://twitter.com/alex_barashkov/status/1590329974409469952) to understand). It makes techniques used in `next/font` framework-agnostic.
+- 📦 [Remix-Vite](https://github.com/sudomf/remix-vite): adds Hot Module Replacement support to Remix
+- 📦 [craco 7.0](https://github.com/dilanx/craco/releases/tag/v7.0.0): allows to customize CRA - CRA v5 support
+- 📦 [Redwood 3.3](https://github.com/redwoodjs/redwood/releases/tag/v3.3.0)
+- 📦 [Rockpack 3.0 - create-react-app on steroids + SSR](https://github.com/AlexSergey/rockpack)
+
+<SubscribeFormEmbed />
+
+---
+
+
+## 📱 React-Native
+
+- 📜 [Expo-router and remote code](https://medium.com/@dan_tamas/expo-router-and-remote-code-e49f31a33b73): 展示了如何使用[react-native-wormhole](https://github.com/cawfree/react-native-wormhole)和Expo Router来消费远程URL上的React-Native组件。这与拥有[React-Native服务器组件](https://twitter.com/Baconbrix/status/1585058874864062466)的想法相当相关。
+- 🧵 [Expo Modules API thread](https://twitter.com/tsapeta/status/1590353202402115584): Tomasz Sapeta分享了一些关于在Swift/Kotlin中创建现代本地模块的新Expo API的有趣信息，包括一些未来的发展，如[SwiftUI](https://twitter.com/tsapeta/status/1591003968649728001)/Jetpack Compose支持。
+- 📦 [React-Native 0.70.6](https://twitter.com/CipolleschiR/status/1592573159215337472)
+- 📦 [Moti 0.21](https://twitter.com/FernandoTheRojo/status/1592264186960257027)
+- 📦 [JestNative v5.2 matchers - toHaveAccessibilityState()](https://twitter.com/mdj_dev/status/1590724369835524096)
+- 🎙️ [The React Native Show 18 - Module Federation](https://www.callstack.com/podcasts/module-federation)
+- 🎙️ [RNR 252 - Ionic's React Native Portals with Josh Thomas](https://reactnativeradio.com/episodes/rnr-252-ionics-react-native-portals-with-josh-thomas)
+
+---
+
+
+## 🔀 其它
+
+- [TypeScript 4.9](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/): with satisfies!
+- [TypeScript satisfies operator](https://tomdohnal.com/posts/typescript-satisfies-keyword): another example of using satisfies
+- [Qwik Showcase](https://qwik.builder.io/showcase/): great Lighthouse scores
+- [Introducing SolidStart: The SolidJS Framework](https://www.solidjs.com/blog/introducing-solidstart): the SolidJS meta-framework SolidJS is now in beta. It takes some React ecosystem inspirations and bring some novel ideas. See also [Fireship - A Solid Start](https://www.youtube.com/watch?v=DVWu2b7mvFg)
+- [Parcel 2.8](https://twitter.com/devongovett/status/1590378157747875840): great improvements around bundling, perf, HMR, code splitting...
+- [Deno 1.28 - Featuring 1.3 Million New Modules](https://deno.com/blog/v1.28): npm compatibility with security in mind. See also this [video](https://twitter.com/deno_land/status/1592274094963462144).
+- [The evolution of scalable CSS](https://frontendmastery.com/posts/the-evolution-of-scalable-css/): nice retrospective of the evolution of CSS techniques, including CSS-in-JS popularized by React
+- [Why would anyone need JavaScript generator functions?](https://jrsinclair.com/articles/2022/why-would-anyone-need-javascript-generator-functions/)
+- [Stylify - Write CSS Faster](https://stylifycss.com/)
+- [Everything new from GitHub Universe 2022](https://github.blog/2022-11-09-everything-new-from-github-universe-2022/)
+- [Octoverse 2022 - The state of open source software](https://octoverse.github.com/)
+- [Forking Chrome to turn HTML into SVG](https://fathy.fr/html2svg)
+- [This week in stc, 1](https://kdy1.dev/posts/2022/11/stc-update-1)
+- [Change Array By Copy in Chromium](https://twitter.com/robpalmer2/status/1591174422802890754)
+- [ultrahtml 1.0](https://github.com/natemoo-re/ultrahtml)
+- [Announcing Cypress Component Testing GA and Performance Improvements in Cypress 11](https://www.cypress.io/blog/2022/11/08/announcing-cypress-11/)
+- [GreenFrame - measure the carbon footprint of websites](https://marmelab.com/blog/2022/11/09/greenframe-open-source.html)
+- [Doctolib - 10 lessons I learned owning on a Design System for 30+ Product Designers and 200+ Developers](https://medium.com/doctolib/10-lessons-i-learned-owning-on-a-design-system-for-30-product-designers-and-200-developers-c2986e4dbb6f)
+- [Node.js Security Best Practices](https://nodejs.org/en/docs/guides/security/)
+
+---
+
